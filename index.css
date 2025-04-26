@@ -1,0 +1,86 @@
+.page {
+    max-width: auto;
+    height: 150vh;
+    margin: 0;
+    padding: 0; 
+    background-color: black;
+    background-image: url("background11.png.jpg");
+    background-size: cover;
+  
+}
+
+.content {
+  height: 100%;
+  max-width: 100%;
+  background-color: #060531;
+  opacity: 90%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto auto auto auto 1fr;
+  grid-template-areas:
+    "image"
+    "usuario"
+    "contraseña"
+    "boton"
+    "texto"
+    "texto1"
+    "texto2";
+  margin: 0 ;
+  gap: 40px;
+}
+
+.content__image {
+  grid-area: image;
+  margin: 100px auto 0;
+  border-radius: 50%;
+}
+
+.user {
+    grid-area: usuario;   
+    margin: 0 ;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.contrasena {
+    grid-area: contraseña;
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.boton {
+    height: 50px;
+    background-color: #462AD8;
+    color: white;
+    grid-area: boton;
+    margin-left: 600px;
+
+    text-align: center;
+    max-width: 300px;
+}
+.paragraph {
+    grid-area: texto;
+    max-width: 500px;
+    margin-left:500px;    
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.paragraph1 {
+  color: white;
+  grid-area: texto1;
+  margin: 0 ;
+}
+.paragraph2 {
+    grid-area: texto2;   
+    margin: 0 ;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+body input {
+    font-size: 1.5rem;
+}
